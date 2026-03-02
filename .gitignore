@@ -1,0 +1,5 @@
+node_modules/
+.env
+*.cpuprofile
+results/cpuprofile/
+results/flamegraph/

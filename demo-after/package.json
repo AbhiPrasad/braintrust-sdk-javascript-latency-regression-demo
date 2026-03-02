@@ -1,0 +1,16 @@
+{
+  "name": "latency-regression-demo-after",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Post-regression demo (braintrust@3.2.0 — sequential while loop with await per chunk)",
+  "scripts": {
+    "benchmark": "node src/run-benchmark.mjs",
+    "benchmark:prof": "node --cpu-prof --cpu-prof-dir=../../results/after/cpuprofile src/run-benchmark.mjs",
+    "benchmark:chunked": "BRAINTRUST_LOG_FLUSH_CHUNK_SIZE=10000000 node src/run-benchmark.mjs"
+  },
+  "dependencies": {
+    "braintrust": "file:../../../../workspace/braintrust-sdk-javascript/js",
+    "dotenv": "^16.4.7"
+  }
+}

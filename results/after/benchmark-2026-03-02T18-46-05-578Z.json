@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-03-02T18:46:05.578Z",
+  "label": "AFTER (post-regression)",
+  "sdkVersion": "3.2.0",
+  "run": {
+    "wallTimeSec": 2.225
+  },
+  "workload": {
+    "examples": 40,
+    "logsPerExample": 8,
+    "payloadBytes": 128,
+    "maxConcurrency": 4,
+    "summarizeScores": false
+  },
+  "env": {
+    "BRAINTRUST_LOG_FLUSH_CHUNK_SIZE": null
+  },
+  "rpc": {
+    "totalRequests": 9,
+    "uploads": {
+      "requestCount": 6,
+      "totalLatencyMs": 4099
+    },
+    "endpoints": {
+      "POST /api/apikey/login": {
+        "count": 1,
+        "totalMs": 282,
+        "maxMs": 282,
+        "bytes": 0,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772477163354,
+            "end": 1772477163636
+          }
+        ]
+      },
+      "POST /api/experiment/register": {
+        "count": 1,
+        "totalMs": 132,
+        "maxMs": 132,
+        "bytes": 117,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772477163668,
+            "end": 1772477163800
+          }
+        ]
+      },
+      "GET /version": {
+        "count": 1,
+        "totalMs": 185,
+        "maxMs": 185,
+        "bytes": 0,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772477163814,
+            "end": 1772477163999
+          }
+        ]
+      },
+      "POST /logs3": {
+        "count": 6,
+        "totalMs": 4099,
+        "maxMs": 1027,
+        "bytes": 321817,
+        "statuses": {
+          "200": 6
+        },
+        "timeline": [
+          {
+            "start": 1772477163999,
+            "end": 1772477164533
+          },
+          {
+            "start": 1772477164550,
+            "end": 1772477165079
+          },
+          {
+            "start": 1772477164549,
+            "end": 1772477165148
+          },
+          {
+            "start": 1772477164548,
+            "end": 1772477165228
+          },
+          {
+            "start": 1772477164549,
+            "end": 1772477165279
+          },
+          {
+            "start": 1772477164550,
+            "end": 1772477165577
+          }
+        ]
+      }
+    }
+  },
+  "error": null
+}

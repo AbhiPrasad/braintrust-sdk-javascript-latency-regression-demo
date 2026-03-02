@@ -1,0 +1,108 @@
+{
+  "timestamp": "2026-03-02T18:46:31.281Z",
+  "label": "AFTER (post-regression)",
+  "sdkVersion": "3.2.0",
+  "run": {
+    "wallTimeSec": 1.857
+  },
+  "workload": {
+    "examples": 40,
+    "logsPerExample": 8,
+    "payloadBytes": 128,
+    "maxConcurrency": 4,
+    "summarizeScores": false
+  },
+  "env": {
+    "BRAINTRUST_LOG_FLUSH_CHUNK_SIZE": null
+  },
+  "rpc": {
+    "totalRequests": 9,
+    "uploads": {
+      "requestCount": 6,
+      "totalLatencyMs": 3679
+    },
+    "endpoints": {
+      "POST /api/apikey/login": {
+        "count": 1,
+        "totalMs": 229,
+        "maxMs": 229,
+        "bytes": 0,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772477189425,
+            "end": 1772477189654
+          }
+        ]
+      },
+      "POST /api/experiment/register": {
+        "count": 1,
+        "totalMs": 149,
+        "maxMs": 149,
+        "bytes": 117,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772477189680,
+            "end": 1772477189829
+          }
+        ]
+      },
+      "GET /version": {
+        "count": 1,
+        "totalMs": 153,
+        "maxMs": 153,
+        "bytes": 0,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772477189841,
+            "end": 1772477189994
+          }
+        ]
+      },
+      "POST /logs3": {
+        "count": 6,
+        "totalMs": 3679,
+        "maxMs": 812,
+        "bytes": 321777,
+        "statuses": {
+          "200": 6
+        },
+        "timeline": [
+          {
+            "start": 1772477189995,
+            "end": 1772477190457
+          },
+          {
+            "start": 1772477190467,
+            "end": 1772477190972
+          },
+          {
+            "start": 1772477190469,
+            "end": 1772477190989
+          },
+          {
+            "start": 1772477190468,
+            "end": 1772477191038
+          },
+          {
+            "start": 1772477190468,
+            "end": 1772477191278
+          },
+          {
+            "start": 1772477190468,
+            "end": 1772477191280
+          }
+        ]
+      }
+    }
+  },
+  "error": null
+}

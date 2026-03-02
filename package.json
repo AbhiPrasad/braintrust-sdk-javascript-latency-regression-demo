@@ -1,0 +1,15 @@
+{
+  "name": "latency-regression-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Reproduces braintrust SDK latency regression (issue #1394) — before vs after comparison",
+  "scripts": {
+    "setup": "cd demo-before && npm install && cd ../demo-after && npm install",
+    "compare": "bash scripts/compare.sh",
+    "analyze": "node src/analyze-profile.mjs"
+  },
+  "devDependencies": {
+    "0x": "^5.7.0"
+  }
+}

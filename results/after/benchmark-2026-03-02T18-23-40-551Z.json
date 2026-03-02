@@ -1,0 +1,164 @@
+{
+  "timestamp": "2026-03-02T18:23:40.551Z",
+  "label": "AFTER (post-regression)",
+  "sdkVersion": "3.2.0",
+  "run": {
+    "wallTimeSec": 8.884
+  },
+  "workload": {
+    "examples": 40,
+    "logsPerExample": 8,
+    "payloadBytes": 128,
+    "maxConcurrency": 4,
+    "summarizeScores": false
+  },
+  "env": {
+    "BRAINTRUST_LOG_FLUSH_CHUNK_SIZE": null
+  },
+  "rpc": {
+    "totalRequests": 23,
+    "uploads": {
+      "requestCount": 20,
+      "totalLatencyMs": 8180
+    },
+    "endpoints": {
+      "POST /api/apikey/login": {
+        "count": 1,
+        "totalMs": 250,
+        "maxMs": 250,
+        "bytes": 0,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772475811667,
+            "end": 1772475811917
+          }
+        ]
+      },
+      "POST /api/experiment/register": {
+        "count": 1,
+        "totalMs": 133,
+        "maxMs": 133,
+        "bytes": 117,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772475811947,
+            "end": 1772475812080
+          }
+        ]
+      },
+      "GET /version": {
+        "count": 1,
+        "totalMs": 179,
+        "maxMs": 179,
+        "bytes": 0,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772475812096,
+            "end": 1772475812275
+          }
+        ]
+      },
+      "POST /logs3": {
+        "count": 20,
+        "totalMs": 8180,
+        "maxMs": 667,
+        "bytes": 324572,
+        "statuses": {
+          "200": 20
+        },
+        "timeline": [
+          {
+            "start": 1772475812277,
+            "end": 1772475812879
+          },
+          {
+            "start": 1772475812883,
+            "end": 1772475813370
+          },
+          {
+            "start": 1772475813380,
+            "end": 1772475813657
+          },
+          {
+            "start": 1772475813661,
+            "end": 1772475814182
+          },
+          {
+            "start": 1772475814186,
+            "end": 1772475814604
+          },
+          {
+            "start": 1772475814608,
+            "end": 1772475814996
+          },
+          {
+            "start": 1772475815004,
+            "end": 1772475815323
+          },
+          {
+            "start": 1772475815324,
+            "end": 1772475815848
+          },
+          {
+            "start": 1772475815857,
+            "end": 1772475816195
+          },
+          {
+            "start": 1772475816197,
+            "end": 1772475816864
+          },
+          {
+            "start": 1772475816873,
+            "end": 1772475817246
+          },
+          {
+            "start": 1772475817247,
+            "end": 1772475817760
+          },
+          {
+            "start": 1772475817767,
+            "end": 1772475818082
+          },
+          {
+            "start": 1772475818084,
+            "end": 1772475818404
+          },
+          {
+            "start": 1772475818407,
+            "end": 1772475818599
+          },
+          {
+            "start": 1772475818601,
+            "end": 1772475818988
+          },
+          {
+            "start": 1772475818996,
+            "end": 1772475819294
+          },
+          {
+            "start": 1772475819295,
+            "end": 1772475819910
+          },
+          {
+            "start": 1772475819920,
+            "end": 1772475820144
+          },
+          {
+            "start": 1772475820147,
+            "end": 1772475820549
+          }
+        ]
+      }
+    }
+  },
+  "error": null
+}

@@ -1,0 +1,15 @@
+{
+  "name": "latency-regression-demo-before",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "description": "Pre-regression demo (braintrust@0.4.10 — parallel chunk uploads via Promise.all)",
+  "scripts": {
+    "benchmark": "node src/run-benchmark.mjs",
+    "benchmark:prof": "node --cpu-prof --cpu-prof-dir=../../results/before/cpuprofile src/run-benchmark.mjs"
+  },
+  "dependencies": {
+    "braintrust": "0.4.10",
+    "dotenv": "^16.4.7"
+  }
+}

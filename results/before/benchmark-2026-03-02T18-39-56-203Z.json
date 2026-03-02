@@ -1,0 +1,90 @@
+{
+  "timestamp": "2026-03-02T18:39:56.203Z",
+  "label": "BEFORE (pre-regression)",
+  "sdkVersion": "0.4.10",
+  "run": {
+    "wallTimeSec": 1.562
+  },
+  "workload": {
+    "examples": 40,
+    "logsPerExample": 8,
+    "payloadBytes": 128,
+    "maxConcurrency": 4,
+    "summarizeScores": false
+  },
+  "rpc": {
+    "totalRequests": 8,
+    "uploads": {
+      "requestCount": 6,
+      "totalLatencyMs": 3317
+    },
+    "endpoints": {
+      "POST /api/apikey/login": {
+        "count": 1,
+        "totalMs": 241,
+        "maxMs": 241,
+        "bytes": 0,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772476794650,
+            "end": 1772476794891
+          }
+        ]
+      },
+      "POST /api/experiment/register": {
+        "count": 1,
+        "totalMs": 159,
+        "maxMs": 159,
+        "bytes": 117,
+        "statuses": {
+          "200": 1
+        },
+        "timeline": [
+          {
+            "start": 1772476794918,
+            "end": 1772476795077
+          }
+        ]
+      },
+      "POST /logs3": {
+        "count": 6,
+        "totalMs": 3317,
+        "maxMs": 671,
+        "bytes": 315997,
+        "statuses": {
+          "200": 6
+        },
+        "timeline": [
+          {
+            "start": 1772476795078,
+            "end": 1772476795497
+          },
+          {
+            "start": 1772476795532,
+            "end": 1772476796005
+          },
+          {
+            "start": 1772476795531,
+            "end": 1772476796095
+          },
+          {
+            "start": 1772476795530,
+            "end": 1772476796108
+          },
+          {
+            "start": 1772476795531,
+            "end": 1772476796143
+          },
+          {
+            "start": 1772476795531,
+            "end": 1772476796202
+          }
+        ]
+      }
+    }
+  },
+  "error": null
+}
